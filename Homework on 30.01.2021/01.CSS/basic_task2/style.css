@@ -1,0 +1,18 @@
+p.right{
+    text-align: right;
+}
+h2{
+    text-align: right;
+}
+div{
+    font-family: 'Bad Script', cursive;
+}
+p.bold_cursive{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px ;
+}
+p.last{
+    font-weight: bold;
+}
