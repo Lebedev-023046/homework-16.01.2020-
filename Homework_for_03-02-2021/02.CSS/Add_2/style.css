@@ -1,0 +1,41 @@
+.navigationBlock{
+    width: 15em;
+    background-color: rgb(153, 153, 153);
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item1{
+    margin-bottom: .2em;
+    background-color: gray;
+    
+    
+}
+.item2{
+    margin-bottom: .2em;
+    background-color: gray;
+    
+    
+}
+.item2 img{
+    float: right;
+    
+}
+
+.conclusionBlock{
+    background-color: rgb(153, 153, 153);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.articlesBlock{
+    display: flex;
+    flex-direction: column;
+
+}
+.body{
+    background-color: rgb(189, 185, 185);
+}
