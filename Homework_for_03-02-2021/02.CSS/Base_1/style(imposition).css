@@ -1,0 +1,22 @@
+.three2{
+    background-image: url('cards.png');
+    width: 139px;
+    height: 190px;
+    background-position: -143px -198px;
+}
+.five2{
+    background-image: url('cards.png');
+    width: 139px;
+    height: 190px;
+    background-position: -433px -600px;
+    margin-top: -156px;
+    margin-left: 35px;
+}
+.nine2{
+    background-image: url('cards.png');
+    width: 139px;
+    height: 190px;
+    background-position: -289px -1395px;
+    margin-top: -156px;
+    margin-left: 70px;
+}

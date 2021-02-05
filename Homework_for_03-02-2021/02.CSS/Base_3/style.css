@@ -21,8 +21,12 @@
 .conclusion{
     background-color: rgb(153, 153, 153);
     clear: both;
+    width: 1504px;
 }
 .indent{
     margin-bottom: .02em;
     height: auto;
+}
+.body{
+    background-color:  rgb(179, 175, 175);
 }
