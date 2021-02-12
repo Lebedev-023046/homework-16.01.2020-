@@ -1,0 +1,85 @@
+div.main_meny{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+div.main_meny > div{
+    border: solid black;
+    background-color:rgb(207, 201, 201);
+    border-radius: 3px;
+    border-width: thin;
+    width: 100px;
+    cursor: pointer ;
+}
+
+div.meal{
+    display: none;
+    width: 100px;
+}
+
+div.meal > div{
+    border: solid black;
+    background-color:rgb(207, 201, 201);
+    border-radius: 3px;
+    border-width: thin;
+    /*position: relative;*/
+    cursor: pointer;
+    
+    
+}
+
+
+
+div.main_meny > div:hover div.meal{
+    display: block; position: absolute;
+    -moz-transition:  .5s;
+    transition: .5s;
+    
+}
+
+div.main_meny > div:hover{
+    background-color: rgb(100, 99, 99);
+    -moz-transition:  .5s;
+    transition: .5s;
+    
+}
+
+@media all and (max-width: 730px){
+    div.main_meny{
+        display: flex;
+        flex-direction: column;
+    }
+    div.meal{
+        display: none;
+        width: 100px;
+    }
+    div.meal>div{
+        border: solid black;
+        background-color:rgb(207, 201, 201);
+        border-radius: 3px;
+        border-width: thin;
+        position: relative;
+        left: 103px;
+        bottom: 20px;
+        cursor: pointer;
+        
+    }
+    div.main_meny > div{
+        border: solid black;
+        background-color:rgb(207, 201, 201);
+        border-radius: 3px;
+        border-width: thin;
+        width: 103px;
+        cursor: pointer ;
+        height: 25px;
+    }
+    div.main_meny > div:hover div.meal{
+        display: flex; flex-direction: row; position: absolute;
+    }
+    div.main_meny > div:hover{
+        background-color: rgb(100, 99, 99);
+    }
+
+    
+}
