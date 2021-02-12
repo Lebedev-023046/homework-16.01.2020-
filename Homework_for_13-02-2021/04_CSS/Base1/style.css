@@ -4,3 +4,35 @@ p{
     border-top-right-radius: 10px;
     padding: 5px;
 }
+p a[href^="https://"]{
+    background: url(img/extref.png) no-repeat;  
+    padding: 0px 0px 1px 12px;
+}
+
+p a[href$=".doc"]{
+    background: url(img/logo-doc.jpg) no-repeat right;
+    padding-right: 18px;
+}
+p a[href$=".pdf"]{
+    background: url(img/logo-pdf.png) no-repeat right;
+    padding-right: 18px;
+}
+p a[href$=".zip"]{
+    background: url(img/logo-zip.gif) no-repeat right;
+    padding-right: 18px;
+}
+ul{
+    list-style-image: url(img/logo-list.jpg);
+}
+ul li:first-child a:hover{    
+    background: url(img/logo-doc.jpg) no-repeat right;
+    padding-right: 18px;
+}
+ul li:nth-child(2) a:hover{    
+    background: url(img/logo-pdf.png) no-repeat right;
+    padding-right: 18px;
+}
+ul li:last-child a:hover{    
+    background: url(img/logo-zip.gif) no-repeat right;
+    padding-right: 18px;
+}
