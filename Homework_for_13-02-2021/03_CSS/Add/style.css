@@ -23,7 +23,7 @@ div.meal > div{
     background-color:rgb(207, 201, 201);
     border-radius: 3px;
     border-width: thin;
-    
+    position: relative;
     cursor: pointer;
     
     
