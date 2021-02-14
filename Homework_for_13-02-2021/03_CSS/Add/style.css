@@ -1,60 +1,99 @@
-div.main_meny{
-    display: flex;
-    flex-direction: row;
-   
+#navigation > ul{
+    margin:0px auto 0;
 }
 
-div.main_meny > div{
-    border: solid black;
-    background-color:rgb(207, 201, 201);
+#navigation > ul > li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    padding:0; 
+
+}
+ 
+#navigation a{
+    text-decoration:none;
+}
+
+#navigation > ul > li > a{
+    font-size:15px;
+    border: solid black thin;
     border-radius: 3px;
-    border-width: thin;
-    width: 100px;
-    cursor: pointer ;
+    background-color:rgb(172, 169, 169);
+    color: black;
 }
 
-div.meal{
-    display: none;
-    width: 100px;
+
+
+#navigation li ul{
+    position:absolute;
+    list-style:none;
+    top:15px;
+    font-size:15px;
+    left:0;
+    margin:0;
+    padding:0;
+    max-height:0px;
+    overflow:hidden;
+    -webkit-transition:max-height 0.4s linear;
+    -moz-transition:max-height 0.4s linear;
+    transition:max-height 0.4s linear;
 }
 
-div.meal > div{
-    border: solid black;
-    background-color:rgb(207, 201, 201);
+#navigation li:hover ul{
+    max-height:300px;
+}
+
+#navigation li ul li{
+    color:black;
+    background-color: rgb(170, 170, 170);
     border-radius: 3px;
-    border-width: thin;
-    position: relative;
-    cursor: pointer;
-    
-    
+    border: solid black thin
 }
 
-
-
-div.main_meny > div:hover div.meal{
-    display: block; position: absolute;
-    -moz-transition:  .5s;
-    transition: .5s;
-    
+#navigation li ul li:last-child{
+    border-bottom:none;
 }
 
+#navigation li ul li a{
+    padding: 0px 18px;
+    color: black;
+    display: block;
+}
 
-div.main_meny > div:hover{
-    background-color: rgb(100, 99, 99);
-    
-    
+#navigation li ul li:hover{
+    background-color:rgb(156, 156, 156);
+}
+
+#navigation li ul li:first-child{
+    margin-top:5px;
+    position:relative;
 }
 
 @media all and (max-width: 730px){
-    div.main_meny{
-        display: flex;
-        flex-direction: column;
+    #navigation > ul > li{
+        list-style: none;
+        position:relative;
+        padding:0; 
     }
-    div.meal{
-        display: none;
+
+
+    #navigation li ul{
         width: 100px;
+        position:absolute;
+        list-style:none;
+        top:15px;
+        font-size:15px;
+        left:0;
+        margin:0;
+        padding:0;
+        max-height:0px;
+        overflow:hidden;
+        -webkit-transition:max-height 0.4s linear;
+        -moz-transition:max-height 0.4s linear;
+        transition:max-height 0.4s linear;
     }
-    div.meal>div{
+
+    /*div.meal>div{
         border: solid black;
         background-color:rgb(207, 201, 201);
         border-radius: 3px;
@@ -79,7 +118,7 @@ div.main_meny > div:hover{
     }
     div.main_meny > div:hover{
         background-color: rgb(100, 99, 99);
-    }
+    }*/
 
     
 }
